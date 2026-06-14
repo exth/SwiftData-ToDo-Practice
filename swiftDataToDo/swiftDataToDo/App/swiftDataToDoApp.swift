@@ -1,17 +1,13 @@
-//
-//  swiftDataToDoApp.swift
-//  swiftDataToDo
-//
-//  Created by Вадим on 15.06.2026.
-//
-
 import SwiftUI
+import SwiftData
+
 
 @main
-struct swiftDataToDoApp: App {
+struct testSD2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TasksView()
         }
+        .modelContainer(for: Task.self)
     }
 }
