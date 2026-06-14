@@ -3,8 +3,10 @@
 A practice project built to learn SwiftData and MVVM architecture.
 
 ## Screenshots
-![Main Screen](Screenshots/main.png)
-![Add Task](Screenshots/add.png)
+<p>
+  <img src="Screenshots/main.png" width="200"/>
+  <img src="Screenshots/add.png" width="200"/>
+</p>
 
 ## Stack
 - Swift / SwiftUI
