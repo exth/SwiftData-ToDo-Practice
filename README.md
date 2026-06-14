@@ -1,6 +1,6 @@
 # SwiftData-ToDo-Practice
 
-A practice project built to learn SwiftData and MVVM architecture.
+A practice project built to learn SwiftData and MVVM architecture
 
 ## Screenshots
 <p>
