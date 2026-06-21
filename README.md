@@ -1,6 +1,6 @@
 # SwiftData-ToDo-Practice
 
-A practice project built to learn SwiftData and MVVM architecture. Focus on functionality, not design
+A practice project built to learn SwiftData, MVVM architecture, and Unit Testing (XCTest). Focus on functionality and code reliability, not design.
 
 ## Screenshots
 <p>
@@ -8,17 +8,21 @@ A practice project built to learn SwiftData and MVVM architecture. Focus on func
   <img src="Screenshots/add.png" width="200"/>
 </p>
 
-## Stack
-- Swift / SwiftUI
-- SwiftData
-- MVVM
-
 ## Features
 - Add tasks with title, note and priority
 - Delete task on completion
 - Tasks sorted by date (newest first)
 - Empty state placeholder
 - Data persists between app launches
+
+## Stack
+- Swift / SwiftUI
+- SwiftData
+- XCTest (Unit Testing)
+- MVVM
+
+## Testing
+The project features a dedicated Unit Testing suite built with `XCTest`.
 
 ## Planned Features
 - Display completed tasks separately
