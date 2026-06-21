@@ -17,8 +17,13 @@ final class TaskViewModel {
             return
         }
         
+        let trimmedTitle = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedTitle.isEmpty else {
+            return
+        }
+        
         let task = Task(
-            title: title.trimmingCharacters(in: .whitespaces),
+            title: trimmedTitle,
             note: note?.isEmpty == true ? nil : note,
             priority: priority
         )
