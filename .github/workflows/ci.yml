@@ -23,7 +23,7 @@ jobs:
       - name: Run tests
         run: |
           xcodebuild test \
-            -project SwiftData-ToDo-Practice/swiftDataToDo/swiftDataToDo.xcodeproj \
+            -project swiftDataToDo/swiftDataToDo.xcodeproj \
             -scheme swiftDataToDo \
             -destination "generic/platform=iOS Simulator" \
             -resultBundlePath TestResults
