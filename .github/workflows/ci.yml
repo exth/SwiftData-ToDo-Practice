@@ -11,6 +11,7 @@ jobs:
       - name: Build and Test
         run: |
           xcodebuild test \
+            -project swiftDataToDo/swiftDataToDo.xcodeproj \
             -scheme swiftDataToDo \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
             -resultBundlePath TestResults
