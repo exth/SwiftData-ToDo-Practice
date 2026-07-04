@@ -1,17 +1,29 @@
-name: iOS CI
+name: test
 
-on: push
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Build and Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app
+
+      - name: List available simulators (debug)
+        run: xcrun simctl list devices available
+
+      - name: Run tests
         run: |
           xcodebuild test \
-            -project swiftDataToDo/swiftDataToDo.xcodeproj \
+            -project SwiftData-ToDo-Practice/swiftDataToDo/swiftDataToDo.xcodeproj \
             -scheme swiftDataToDo \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination "generic/platform=iOS Simulator" \
             -resultBundlePath TestResults
