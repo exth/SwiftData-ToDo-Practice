@@ -17,12 +17,12 @@ jobs:
       - name: Select Xcode 26
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '26.0'
+          xcode-version: '26.6'
 
       - name: Run tests
         run: |
           xcodebuild test \
             -project swiftDataToDo/swiftDataToDo.xcodeproj \
             -scheme swiftDataToDo \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.6' \
             -resultBundlePath TestResults
