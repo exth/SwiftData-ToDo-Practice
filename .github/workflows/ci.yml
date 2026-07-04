@@ -25,5 +25,5 @@ jobs:
           xcodebuild test \
             -project swiftDataToDo/swiftDataToDo.xcodeproj \
             -scheme swiftDataToDo \
-            -destination "generic/platform=iOS Simulator" \
+            -destination "platform=iOS Simulator,name=iPhone 16,OS=18.6" \
             -resultBundlePath TestResults
